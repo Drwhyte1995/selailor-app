@@ -4,6 +4,7 @@ import jwt from "jsonwebtoken";
 import { check, validationResult } from "express-validator";
 
 
+
 const router = express.Router();
 
   router.post("/register",[check("firstName", "First Name is required").isString(),
